@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        body{
+            text-align: center;
+        }
+        div{
+            margin-top: 5px;
+        }
+        p{
+            font-size: 20px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+    <p style="margin-top: 100px;">Primeiro número:</p>
+    <input id="n1" type="number"/>
+    <p>Segundo número:</p>
+    <input id="n2" type="number"/>
+   <div><button id="somar">Somar</button></div>
+
+   <script>
+    const botao = document.getElementById("somar")
+    const n1 = document.getElementById('n1')
+    const n2 = document.getElementById('n2')
+    
+
+    botao.addEventListener('click',function soma(){
+        let soma=parseFloat(n1.value)+parseFloat(n2.value)
+        alert("a soma é "+soma)
+    })
+   </script>
+
+</body>
+</html>

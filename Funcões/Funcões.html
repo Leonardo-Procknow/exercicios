@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <script>
+        let n1
+        let n2
+        function soma(n1,n2){
+            let soma=n1+n2
+            return soma
+        }
+        console.log(soma(2,3))
+        //----------------------
+        let senhaC="paodebatata"
+        function comparaSenha(senhaE,senhaC)
+        {
+            if(senhaE==senhaC){
+                console.log("Conectado")
+            }else{
+                console.log("Senha incorreta")
+            }
+        }
+        comparaSenha(senhaC,"pao")
+        comparaSenha(senhaC,"paodebatata")
+        //----------------------
+        //Primeiro exercíci0
+        let n
+        function fatorial(n){
+            let r = 1
+            for(i=1;i<=n;i++){
+            r = r * i
+            }
+            return r
+        }
+        console.log(fatorial(5))
+
+        function parimpar(n){
+            if(n%2==0){
+            console.log("o número é par")
+            }
+            else{
+            console.log("o número é ímpar")
+            }
+        }
+        parimpar(2)
+    </script>
+</body>
+</html>
